@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reto 02 - Consumo API {Games}</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/crud-client.js"></script>
+</head>
+<body>
+    <h1>Consumo API {Client}</h1>
+    <h2>Metodo GET / DELETE</h2>
+    <div id="resultado" class="datagrid"></div>
+    <button onclick="traerInformacion()">Consultar</button>
+    <br>
+    <h2>Metodo POST / PUT</h2>
+    <div>
+        <input type="number" id="id" placeholder="ID">
+        <input type="text" id="name" placeholder="Nombre">
+        <input type="text" id="email" placeholder="E-mail">
+        <input type="number" id="age" placeholder="Edad">
+    </div>
+    <button onclick="guardarInformacion()">Guardar</button> || <button onclick="editarInformacion()">Editar</button>
+</body>
+</html>
